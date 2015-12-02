@@ -5,7 +5,7 @@ History
 
 --------------------------------------------------------------
 v2.8.7 - 2015/12/02
-  + Added Delphi and C++ Builder 9 (Seattle) Supported
+  + Added Delphi and C++ Builder 9 (Seattle) Support
 
 --------------------------------------------------------------
 v2.8.6 - 2014/12/03
@@ -115,5 +115,5 @@ v1.0.0 - 2013/12/14
 ------------------------------------
 Source Code: http://sourceforge.net/projects/dpfdelphiandroid/
 ------------------------------------
-© 2011-2014 Dadeh Pardazane Faragir (D.P.F). All rights reserved.
+Â© 2011-2014 Dadeh Pardazane Faragir (D.P.F). All rights reserved.
 http://www.dpfaragir.com
