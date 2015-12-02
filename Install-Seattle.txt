@@ -1,0 +1,61 @@
+D.P.F Android Native Components (Seattle)
+-----------------------------------------------
+
+This file contains information usefull to users newly install components in
+Seattle or to C++ Builder users.
+
+See original "Install-orig.txt" for other descriptions.
+
+-----------------------------------------------
+INSTALLING
+-----------------------------------------------
+
+Create classes
+~~~~~~~~~~~~~~~~~~~~~~~~~
+1. Go to "JavaClasses"
+2. Run "build.bat /?" for info
+3. Edit "build.bat" and correct paths in VARIABLES section at file start
+4. Run "build.bat"
+5. If all is ok, you will see "All done!" text
+
+Creating packages
+~~~~~~~~~~~~~~~~~~~~~~~~~
+1. Open DPFAndroidXE9.dproj and DPFAndroidXE9ds.dproj in BDS
+2. Select DPFAndroidXE9.dproj
+3. Select "Win32" targer
+4. Compile it
+5. Select "Android" target
+6. Compile it
+7. Select DPFAndroidXE9ds.dproj
+8. Select single possible target "Win32"
+9. Compile it
+
+Installing packages
+~~~~~~~~~~~~~~~~~~~~~~~~~
+1. Add path to "Lib" folder to %PATH% variable
+2. In BDS select "Component"-"Install packages" and add "Lib\DPFAndroidXE9ds.bpl" package
+
+Using packages
+~~~~~~~~~~~~~~~~~~~~~~~~~
+1. In BDS select "Tools"-"Options"-"C++ Options"-"Paths and directories"
+2. Add path to "H" folder to Win32 include paths
+3. Add path to "Lib" folder to Win32 library paths
+4. Add path to "Lib\Android" folder to Android paths
+
+Creating application with components
+~~~~~~~~~~~~~~~~~~~~~~~~~
+NOTE: Next configuration steps you need to execute only once per application
+
+1. Create "Multi-Device Application"
+2. Go to "Project"-"Options"-"Packages"-"Runtime packages" and add DPFAndroidXE9 to the packages list
+3. Create Multi-device form and add any DPF components on it
+4. Select "Android" target and make application (Do not run it!)
+4. Go to "Project"-"Deployment"
+5. Locate default "classes.dex" file entry
+   By default it has ".\Android" local path, and "classes\" remote path
+   DESELECT it! (remove check mark from it)
+6. Press "Add files" toolbar button and add "Classes\classes.dex" file to project
+7. SELECT it (make sure check mark is set on it)
+8. Select added "classes.dex" file and press "Change remote path" toolbar button
+   Enter "classes\" in popup dialog
+9. Now run your application on Android and check controls work
