@@ -309,6 +309,7 @@ type
     property DrawType  : TDPFDrawType read FDrawType write FDrawType default dtStandard;
 
     property Scale;
+    property Size;
     property Anchors;
     property Margins;
     property Align;
@@ -415,11 +416,7 @@ end;
 procedure TDPFANDBaseControl.AddSubView( ThisControl: TDPFANDBaseControl; ToParentControl: TControl; ViewAdded: JView = nil );
 var
   C: JObject;
-  // Flag: Boolean;
   V: JView;
-  // J   : JView;
-  // LP  : JViewGroup_LayoutParams;
-  // bType, bFlag, bFormat: Integer;
 begin
   if not AddThisToSubView then
     exit;
