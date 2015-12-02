@@ -16,3 +16,6 @@ Hope you find its usefull :)
 PS: I cant test it on Delphi, so not sure its ported correctly but it works in C++
 
 PPS: Packages made in Delphi projects (dproj) due to error in ilink32 which makes invalid "bpi" import library for runtime package.
+
+See:
+https://github.com/JouriM66/DPF.Android.Native.Components/blob/master/classes_dex.png
