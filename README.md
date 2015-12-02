@@ -13,4 +13,6 @@ Here is the port to Embarcadero BDS 9 (Seattle) plus several changes:
 
 Hope you find its usefull :)
 
-PS: I cant test it on delpi, so not shure it ported correctly but it works in C++
+PS: I cant test it on Delphi, so not sure its ported correctly but it works in C++
+
+PPS: Packages made in Delphi projects (dproj) due to error in ilink32 which makes invalid "bpi" import library for runtime package.
